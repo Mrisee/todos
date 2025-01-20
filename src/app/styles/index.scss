@@ -1,0 +1,26 @@
+@import 'reset';
+@import 'variables/global';
+
+body {
+	font: var(--font-m);
+
+	background: var(--bg-color);
+	color: var(--primary-color);
+
+	min-height: 100vh;
+}
+
+.title {
+	font-size: 56px;
+	line-height: 56px;
+	margin-block: 32px;
+	font-weight: 400;
+	color: var(--title-color);
+	text-align: center;
+}
+
+.container {
+	max-width: 560px;
+	margin: 0 auto;
+	padding: 15px;
+}

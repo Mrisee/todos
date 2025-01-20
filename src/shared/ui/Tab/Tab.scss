@@ -1,0 +1,9 @@
+.tab {
+	cursor: pointer;
+	padding: 2px 4px;
+	border-radius: 3px;
+
+	&_active {
+		border: 1px solid var(--title-color);
+	}
+}

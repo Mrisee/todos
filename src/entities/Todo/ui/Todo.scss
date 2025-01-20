@@ -1,0 +1,62 @@
+.todo {
+	$self: &;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+
+	overflow: hidden;
+
+	padding: 12px 20px;
+
+	border-top: 1px solid var(--border-color);
+	background-color: white;
+
+	&__status {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		min-width: 32px;
+		height: 32px;
+
+		background-color: white;
+		cursor: pointer;
+
+		border-radius: 50%;
+		border: 1px solid var(--border-color);
+
+		&::after {
+			content: '';
+			display: block;
+			opacity: 0;
+
+			width: 6px;
+			height: 12px;
+
+			border-right: 2px solid var(--submit-color);
+			border-bottom: 2px solid var(--submit-color);
+
+			transform: rotate(90deg);
+
+			transition: all linear 200ms;
+		}
+	}
+
+	&__title {
+		font-size: 18px;
+		font-weight: normal;
+	}
+
+	&--active {
+		#{$self}__status::after {
+			opacity: 1;
+
+			transform: rotate(45deg);
+		}
+
+		#{$self}__title {
+			color: var(--text-secondary);
+			text-decoration: line-through;
+		}
+	}
+}
