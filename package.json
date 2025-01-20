@@ -1,8 +1,8 @@
 {
-	"name": "todo",
+	"name": "todos",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://mrisee.github.io/todos-test/",
+	"homepage": "https://mrisee.github.io/todos/",
 	"dependencies": {
 		"@types/node": "^16.18.105",
 		"@types/react": "^18.3.3",
